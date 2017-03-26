@@ -58,4 +58,12 @@ class Solution2(object):
             for j in xrange(i):
                 if nums[j] < nums[i]:
                     dp[i] = max(dp[i], dp[j] + 1)
+        print dp            
+        print len(dp)
         return max(dp) if dp else 0
+
+
+xx=[10, 9, 2, 5, 3, 7, 101, 18]
+s=Solution2()
+print s.lengthOfLIS(xx)
+
